@@ -1,7 +1,7 @@
 on:
   push:
-    tags:
-      - qr_gen-v*
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
