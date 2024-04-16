@@ -15,3 +15,4 @@ fn main() {
     let image = code.render::<Luma<u8>>().build();
     image.save("./qr_code.png").unwrap();
 }
+
