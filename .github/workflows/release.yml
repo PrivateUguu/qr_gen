@@ -6,6 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: version
+        run: echo "::set-output name=version::$(./target/debug/qr_gen --version)"
+        id: version
+
       - uses: actions/checkout@v3
       - name: Build
         run: cargo build --verbose
